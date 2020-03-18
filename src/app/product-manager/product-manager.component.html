@@ -17,7 +17,5 @@
 	</thead>
 </table>
 <div class="ht" *ngIf="selected">
-	<h3>ID : {{selected.id}}</h3><br>
-	<h3>Name : {{selected.name}}</h3><br>
-	<h3>Price {{selected.price}}</h3>
+	<app-product-detail [detail]="selected"></app-product-detail>
 </div>
